@@ -29,12 +29,16 @@
 
 .insta-header-logo {
   display: flex;
-  margin-right: 200px;
+  margin-right: auto;
+  width: 140px;
+  height: 100%;
 }
 
-.insta-header-logo button {
-  background: transparent;
-  border: none;
+.dropdown-following {
+  display: flex;
+  align-self: center;
+  width: 22px;
+  height: 22px;
 }
 
 .insta-header-search {
@@ -94,7 +98,6 @@
 .insta-main-feed {
   display: flex;
   flex-direction: column;
-  margin-right: 8px;
   width: 470px;
 }
 
@@ -153,7 +156,6 @@
 .insta-main-post-card {
   display: flex;
   flex-direction: column;
-  width: 100%;
   height: 740px;
   border: 1px solid rgb(219, 219, 219);
   border-radius: 8px;
