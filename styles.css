@@ -14,11 +14,12 @@
   align-items: center;
   border-bottom: 1px solid rgb(219, 219, 219);
   background-color: #fff;
+  position: fixed;
+  top: 0;
 }
 
 .insta-header-element {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -57,18 +58,17 @@
   border-radius: 0 8px 8px 0;
   width: 100%;
   padding-left: 16px;
+  outline: none;
 }
 
 .insta-header-function {
   display: flex;
   justify-content: center;
-  width: 284px;
   margin-left: 60px;
 }
 
 .insta-header-function a {
   display: flex;
-  flex-direction: row;
   border: none;
   background: transparent;
   margin-left: 24px;
@@ -80,16 +80,15 @@
   align-items: center;
   width: 100%;
   min-width: 100vh;
+  margin-top: 80px;
 }
 
 .insta-main-element {
   display: flex;
-  flex-direction: row;
   flex-wrap: nowrap;
   max-width: 1000px;
   width: 100%;
   justify-content: center;
-  margin-top: 50px;
 }
 
 .insta-main-feed {
@@ -102,18 +101,16 @@
 .insta-main-story {
   border: 1px solid rgb(219, 219, 219);
   height: 90px;
-  width: 100%;
   margin-bottom: 8px;
   padding-top: 16px;
   display: flex;
-  flex-direction: row;
   overflow: hidden;
   overflow-x: scroll;
   border-radius: 8px;
   background-color: #fff;
 }
 
-.insta-main-story::-webkit-scrollbar{
+.insta-main-story::-webkit-scrollbar {
   display: none;
 }
 
@@ -146,11 +143,170 @@
 }
 
 .insta-main-post {
+  display: flex;
   margin-top: 8px;
-  border: 1px solid;
   width: 100%;
   height: 100vh;
-  background-color: #fff;
+}
+
+.insta-main-post-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 8px;
+  height: 740px;
+}
+
+.insta-main-post-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px 0 4px 0;
+}
+
+.insta-main-post-user {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  width: 100%;
+}
+
+.insta-main-post-profile-pic {
+  height: 40px;
+  width: 40px;
+  margin-right: 8px;
+}
+
+.insta-main-post-profile-pic img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.insta-main-post-username {
+  font-weight: bold;
+}
+
+.insta-main-post-info .insta-main-post-function {
+  display: flex;
+  height: 100%;
+  width: auto;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.insta-main-post-info .insta-main-post-function img {
+  width: 20px;
+  height: 20px;
+  border: none;
+  outline: none;
+}
+
+.insta-main-image-list img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.insta-main-post-content {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.insta-main-post-content .insta-main-post-function {
+  display: flex;
+  width: 100%;
+  justify-content: stretch;
+}
+
+.icon-function {
+  height: 24px;
+  width: 24px;
+  margin: 8px 8px 8px 8px;
+}
+
+.icon-function-bookmark {
+  height: 24px;
+  width: 24px;
+  margin: 8px 8px 8px 8px;
+  margin-left: auto;
+}
+
+.icon-function img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.icon-function-bookmark img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.insta-main-post-display {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 8px;
+}
+
+.display-like {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+.display-like-image-profile {
+  display: flex;
+  margin-right: 4px;
+}
+
+.display-like-image-profile img {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.display-comment {
+  display: flex;
+  height: 30px;
+  align-items: center;
+}
+
+.display-comment .user {
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.display-time {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+.display-time .time {
+  font-size: 10px;
+  color: grey;
+}
+
+.insta-main-post-comment {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-emoticon {
+  height: 28px;
+  width: 28px;
+}
+
+.comment-emoticon img {
+  width: 100%;
+  object-fit: contain;
 }
 
 .insta-main-profile {
